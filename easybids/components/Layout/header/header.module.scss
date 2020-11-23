@@ -1,0 +1,202 @@
+
+    .eb-navbar {
+        font-family: roboto;
+        box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.16);
+      
+        #{&}__item {
+          .nav-link {
+            font-weight: 700;
+            color: #00000099;
+            @media screen and (max-width: 991px) {
+              color: #000;
+            }
+            font-family: roboto;
+            font-size: 15px;
+            margin-left: 4px;
+            margin-right: 4px;
+          }
+          .dropdown-toggle::after {
+            content: none;
+          }
+          .btn-primary {
+            background-color: #3a4ee8;
+            &:hover {
+              background-color: #3a4ee8;
+            }
+          }
+      
+          @media screen and (max-width: 992px) {
+            border-bottom: 1px solid rgb(209, 208, 208);
+          }
+      
+          .eb-spbtn {
+            position: relative;
+            padding: 15px 15px;
+            border: 2px solid white;
+            background: #fff;
+            width: 250px;
+            font-family: sans-serif;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border: 0.9px solid rgba(0, 0, 0, 0.1);
+            text-align: left;
+            text-align: center;
+            box-sizing: border-box;
+            z-index: 1000;
+          }
+          .eb-spbtn:focus {
+            background-color: #fff;
+          }
+      
+          .dropdown-menu {
+            border: none;
+          }
+          .dropdown-toggle::after {
+            content: none !important;
+          }
+      
+          .btn:focus {
+            outline: none !important;
+            box-shadow: none !important;
+          }
+          .dropdown-item.active,
+          .dropdown-item:hover {
+            text-decoration: none;
+            background: none;
+          }
+          .dropdown-item.active,
+          .dropdown-item:active {
+            color: #fff;
+            text-decoration: none;
+            background: none;
+          }
+      
+          .eb-spbtn__wrapper {
+            padding: 10px;
+          }
+      
+          .eb-spbtn__wrapper:hover {
+            outline: 1px dashed #4bd4e6;
+          }
+          .eb-spbtn__wrapper a:hover {
+            color: #666 !important;
+          }
+      
+          .eb-spbtn a {
+            font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            color: #666;
+            text-decoration: none;
+          }
+      
+          .eb-spbtn:after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-top: 2px solid white;
+            border-left: 2px solid white;
+            bottom: 100%;
+            left: 20%;
+            margin-left: -10px;
+            transform: rotate(45deg);
+            margin-bottom: -10px;
+            background: #fff;
+            box-shadow: -1px -1px 18px -8px rgba(0, 0, 0, 0.1);
+            border-top: 0.9px solid rgba(0, 0, 0, 0.1);
+            border-left: 0.9px solid rgba(0, 0, 0, 0.1);
+            border-radius: 4px 0px 0 0;
+          }
+      
+          .eb-servicebtn {
+            position: relative;
+          }
+          .servicebtn {
+            font-size: 12px;
+            height: 45px;
+            padding-top: 13px;
+            padding-left: 16px;
+          }
+          .dropdown-menu {
+            background: none !important;
+            border: none !important;
+          }
+          .dropdown-item {
+            display: block;
+            width: 100%;
+            padding: 0.25rem 1.5rem;
+            clear: both;
+            font-weight: 400;
+            color: #212529;
+            text-align: inherit;
+            white-space: nowrap;
+            background-color: transparent;
+            border: 0;
+            margin-top: -10px;
+            margin-left: -49px;
+          }
+          a.btn.btn-primary.servicebtn {
+            font-size: 14px;
+            padding-left: 16px;
+          }
+          button.dropdown-toggle-split {
+            padding-top: 9px;
+            font-size: 12px;
+            padding-left: 4px;
+            padding-right: 16px;
+          }
+          .btn-primary {
+            background: #3a4ee8;
+            border: none !important;
+            &:hover {
+              background: #3a4ee8;
+            }
+            &:focus {
+              background: #3a4ee8;
+            }
+          }
+        }
+        #{&}__nav {
+          @media screen and (max-width: 992px) {
+            background: white;
+            width: 90%;
+            padding: 25px;
+            border-bottom-left-radius: 6px;
+            border-bottom-right-radius: 6px;
+            box-shadow: 0 8px 18px -10px rgba(0, 0, 0, 0.18);
+          }
+        }
+        #{&}__item--tablet {
+          display: none;
+          @media screen and (max-width: 992px) {
+            display: block;
+          }
+        }
+        .navbar-toggler {
+          border: none !important;
+        }
+      
+        @media screen and (max-width: 992px) {
+          .eb-navbar__cta {
+            display: none;
+          }
+        }
+      }
+
+
+.navbar-collapse {
+  @media screen and (max-width: 991px) {
+    position: absolute;
+    top: 74px;
+    width: 93%;
+  }
+}
+.eb-header {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    top: 0;
+  }

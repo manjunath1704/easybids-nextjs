@@ -1,0 +1,119 @@
+
+    .eb-footer {
+        background-color: #252525;
+        color: #666;
+        padding-bottom:16px;
+        font-family:Roboto;
+        #{&}__services {
+            padding-top:72px;
+           
+            &-inner{
+                display: flex;
+                flex-wrap: wrap;
+            }
+        }
+        #{&}__title {
+            font-weight: bold;
+            font-size: 24px;
+            padding-bottom: 1px;
+            margin-bottom: 24px;
+            color: #ffffff8c;
+        }
+        #{&}__items {
+           
+            margin-right: 24px;
+            margin-bottom: 16px;
+            font-size: 14px;
+            color: #666;
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        #{&}__item--link {
+            color: #2ea3f2;
+        }
+        #{&}__about {
+            margin-top: 40px;
+        }
+        #{&}__available {
+            margin-top: 40px;
+        }
+        #{&}__icon{
+                position: relative;
+                border-radius: 50%;
+                background-color: #c9c8c871;
+                height:  40px;
+                width:  40px;
+                .fab {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            
+        }
+        
+        #{&}__btn {
+            .btn {
+                margin-top: 48px;
+                padding: 0.375rem 1.8rem;
+                font-size: 24px;
+                color: #2ea3f2 !important;
+                background: none !important;
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                box-shadow: 0px 0px 0px 2px rgba(46, 151, 189, 1);
+                transition: 0.5s;
+                &:after {
+                    font-family: "Font Awesome 5 Free";
+                    content: "\f105";
+                    position: absolute;
+                    opacity: 0;
+                    top: 10px;
+                    left: 180px;
+                    transition: 0.5s;
+                    font-weight: 900;
+                    display: inline-block;
+                }
+                &:hover {
+                    padding-right: 24px;
+                    padding-left: 8px;
+                    background-color: #2c2b2b;
+                    box-shadow: none !important;
+                }
+                &:hover:after {
+                    opacity: 1;
+                    right: var(--size-5);
+                }
+            }
+        }
+        #{&}__copyrights {
+            margin-top:40px; 
+            font-size: 14px;
+        }
+        #{&}__gotop {
+            position: fixed;
+            bottom: 100px;
+            right: 0;
+            text-decoration: none;
+            border-bottom-left-radius: 4px;
+            border-top-left-radius: 4px;
+            background-color: rgba(0, 0, 0, 0.3);
+            font-size:25px;
+            color:white;
+            font-weight: 100;
+            
+            padding: 4px 16px;
+            display: none;
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.2);
+            }
+        }
+        
+        
+    }
+    

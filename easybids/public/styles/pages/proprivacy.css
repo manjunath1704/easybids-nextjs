@@ -1,0 +1,65 @@
+.eb-proprivacies {
+  position: relative;
+  top: 80px;
+  font-family: sans-serif;
+}
+
+.eb-proprivacies h1,
+  .eb-proprivacies h2,
+  .eb-proprivacies h3 {
+  font-family: sans-serif;
+}
+
+.eb-proprivacies p {
+  margin: 0;
+  color: #666;
+  padding-bottom: var(--size-4);
+}
+
+.eb-proprivacies .eb-proprivacies__banner {
+  padding-top: var(--section-spacing);
+  padding-bottom: var(--size-18);
+  background-image: linear-gradient(135deg, #2b87da 0%, #29c4a9 100%) !important;
+}
+
+@media (max-width: 980px) {
+  .eb-proprivacies .eb-proprivacies__banner {
+    padding: var(--size-22) 0;
+  }
+}
+
+.eb-proprivacies .eb-proprivacies__banner h1 {
+  font-weight: var(--font-bold);
+  font-size: var(--text-7xl);
+  color: #ffffff !important;
+}
+
+@media (max-width: 767px) {
+  .eb-proprivacies .eb-proprivacies__banner h1 {
+    font-size: var(--text-5xl);
+  }
+}
+
+.eb-proprivacies .eb-proprivacies__content {
+  padding-top: var(--size-25);
+  padding-bottom: var(--size-28);
+  text-align: left;
+}
+
+.eb-proprivacies .eb-proprivacies__content .eb-article__title h1 {
+  font-size: var(--text-3xl);
+  color: #333;
+  font-weight: var(--font-thin);
+  margin: var(--size-4) 0;
+}
+
+.eb-proprivacies .eb-proprivacies__content .eb-article__title p {
+  padding-bottom: 1em;
+}
+
+.eb-proprivacies .eb-proprivacies__content .eb-article__subhead h3 {
+  font-size: var(--text-2xl);
+  color: #666;
+  font-weight: var(--font-thin);
+  margin-bottom: var(--size-2);
+}

@@ -1,0 +1,155 @@
+
+  
+
+    .eb-blog {
+        overflow-x: hidden !important;
+        position: relative;
+        top: 80px;
+        #{&}__title {
+            h2 {
+                font-size: 48px;
+                font-weight: 700;
+                color: #2b2b2b !important;
+                line-height: 1.5em;
+                text-align: center;
+                margin-top: 80px;
+                font-family: "Playfair Display";
+            }
+            p {
+                color: rgba(0, 0, 0, 0.4) !important;
+                font-size: 16px;
+                line-height: 1.9em;
+                font-weight: 600;
+            }
+            hr {
+                border: none;
+                border-top: 3px solid #f7d584;
+                margin-bottom: 48px;
+            }
+        }
+        #{&}__posts {
+            column-count: 3;
+            margin: 32px;
+            column-gap: 40px;
+            margin-top: 150px;
+            margin-bottom:150px;
+            padding: 40px;
+            @media screen and (max-width: 991px) {
+                column-count: 2;
+                margin: 32px;
+                column-gap:40px;
+                padding: 8px;
+            }
+    
+            @media screen and (max-width: 600px) {
+                column-count: 1;
+                margin: 8px;
+                column-gap: 40px;
+            }
+            .eb-post {
+                width: 100%;
+                margin-bottom: 40px;
+                box-shadow: 0px 40px 50px 0px rgba(0, 0, 0, 0.05);
+                break-inside: avoid;
+                img {
+                    width: 100%;
+                }
+            }
+            .eb-post__desc {
+                
+                padding: 20px;
+                background-color: #fff;
+                word-wrap: break-word;
+            }
+    
+            .eb-post__title {
+                font-family: "Playfair Display";
+                font-weight: 700 ;
+                color: #1b1b22 ;
+                font-size: 18px;
+            }
+    
+            .eb-post__author {
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 12px;
+                color: #00000033 !important;
+                line-height: 1.8em;
+                padding: 3px 0;
+            }
+    
+            .eb-post__content {
+                color: rgba(0, 0, 0, 0.4) !important;
+                line-height: 1.9em;
+                font-weight: 600;
+            }
+        }
+    
+        .eb-stayin {
+            font-family: "Open Sans";
+            font-size: 16px;
+            line-height: 1.9em;
+            color: #ffffff ;
+            margin-bottom: 70px;
+            padding-top: 64px;
+            padding-bottom:  64px;
+            background-image: linear-gradient(131deg, #25aae8 0%, #75bfc4 100%) !important;
+    
+            h2 {
+                font-weight: 700;
+                font-size:48px ;
+                color: #ffffff ;
+                line-height: 1.5em;
+            }
+            h4 {
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 16px;
+                letter-spacing: 1px;
+                line-height: 1.5em;
+            }
+            a {
+                color: #0c45d3;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            .row {
+                padding: 64px;
+                @media screen and (max-width: 600px) {
+                    padding: 20px;
+                }
+            }
+            .form-control {
+                font-family: "Open Sans";
+                display: block;
+                width: 100%;
+                font-size: 1rem;
+                padding: 0.975rem 0.75rem;
+                color: #495057;
+                background-color: #fff;
+                background-clip: padding-box;
+                border: 1px solid #ced4da;
+                border-radius: 0.25rem;
+                transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+                box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2);
+            }
+            .btn-success {
+                font-family: "Open Sans";
+                margin-bottom:48px;
+                width: 100% !important;
+                line-height: 2 !important;
+                color: rgba(0, 0, 0, 0.7) !important;
+                border-width: 6px !important;
+                border-color: #00af5d !important;
+                border-radius: 0px !important;
+                letter-spacing: 2px !important;
+                font-size: 14px !important;
+                font-weight: 600 !important;
+                text-transform: uppercase !important;
+                background-color: #00af5d !important;
+                box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.2);
+            }
+        }
+    }
+
